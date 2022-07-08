@@ -103,4 +103,55 @@ http://44.203.110.111:5000/
 ![alt text](./images/17.png)
 ![alt text](./images/18.png)
 
-Routes
+Create ROUTES.
+The ***Todo application*** is created to perform (3) actions namely, create, display and delete. These actions would be associated with endpoints using HTTP standards - POST, GET and DELETE.
+
+Create Routes directory and change to it's directory
+```bash
+mkdir routes
+```
+![alt text](./images/19.png)
+
+Create API file, open and type the codes as shown in the image below.
+```bash
+touch api.js
+```
+```bash
+nano api.js
+```
+![alt text](./images/20.png)
+![alt text](./images/21.png)
+
+MODELS
+Create models neccessary for the database schema.
+```bash
+npm install mongoose
+```
+![alt text](./images/22.png)
+
+Create a directory for models, change to the directory and create a new file called *todo.js*
+```bash
+mkdir models
+```
+```bash
+cd models
+```
+```bash
+touch todo.js
+```
+![alt text](./images/23.png)
+Create schema - write the following codes in the image below. save and exit
+```bash
+nano todo.js
+```
+![alt text](./images/24.png)
+
+Update **routes** in the ***api.js*** file.
+```bash
+nano api.js
+```
+![alt text](./images/25.png)
+![alt text](./images/26.png)
+
+MONGODB - Let's setup the database.
+
