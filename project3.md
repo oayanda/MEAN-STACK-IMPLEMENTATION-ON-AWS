@@ -154,4 +154,134 @@ nano api.js
 ![alt text](./images/26.png)
 
 MONGODB - Let's setup the database.
+Sign up for a free ***mlab account***.
 
+Create user name password, allow ip (0.0.0.0) from anywhere for this test purpose. 
+![alt text](./images/35.png)
+Copy the connection string
+![alt text](./images/34.png)
+
+Create a .env file to add the connection to the database in the todo directory.
+```bash
+touch .env
+```
+```bash
+nano .env
+```
+```bash
+DB = 'mongodb+srv://mongodb+srv://todo_user:PassWord.1@cluster0.9braz2z.mongodb.net/?retryWrites=true&w=majority'
+```
+*save and exit*
+![alt text](./images/31.png)
+![alt text](./images/30.png)
+
+Let's Update the index.js file use .env to enable database connection.
+![alt text](./images/37.png)
+
+Check Node Connection
+```bash
+node index.js
+```
+![alt text](./images/41.png)
+
+It is successful - Backend Done!!
+
+Let's test the api endpoint using postman.
+Download postman [Here](https://www.postman.com/)
+
+Test GET request
+![alt text](./images/52.png)
+
+Test POST request
+![alt text](./images/51.png)
+
+Test DELETE request by adding the id to the URL
+![alt text](./images/54.png)
+
+### STEP 2 -  FRONTEND
+
+In the todo directory, run the code below which would create a folder *client* and some dependencies where the frontend react code would be stored.
+
+```bash
+npx create-react-app client
+```
+![alt text](./images/55.png)
+
+Install more dependenies concurrently
+```bash
+npm install concurrently --save-dev
+```
+![alt text](./images/56.png)
+
+Install nodemon to monitor the server and automatic restart when needed.
+```bash
+npm install nodemon --save-dev
+```
+![alt text](./images/57.png)
+
+Now, Open edit the packahe.json file in the todo directory.
+
+![alt text](./images/58.png)
+
+Configure Proxy in package.json in the client folder.
+```bash
+cd client && nano package.json
+```
+![alt text](./images/60.png)
+
+![alt text](./images/59.png)
+
+In the todo directory run 
+```bash
+npm run dev
+```
+![alt text](./images/600.png)
+
+In the client directory go the src directory, create a directory, create some files.
+```bash
+mkdir components
+```
+```bash
+cd components
+```
+```bash
+touch Input.js ListTodo.js Todo.js
+```
+![alt text](./images/61.png)
+
+In the Input.js file, add these codes.
+![alt text](./images/62.png)
+
+In the client, Axios packages needs to be installed.
+```bash
+npm install axios
+```
+![alt text](./images/63.png)
+
+### Finally Steps 
+
+Open the ListTodo.js In the components directory.
+```bash
+nano ../client/src/components/ListTodo.js
+```
+![alt text](./images/64.png)
+
+Open the Todo.js in the components directory.
+```bash
+nano ../client/src/components/ListTodo.js
+```
+![alt text](./images/65.png)
+
+In the src directory, open the App.js file and type the following codes.
+![alt text](./images/66.png)
+In the same directory, open the App.css file and type the following codes.
+![alt text](./images/67.png)
+In the same directory, open the index.css file and type the following codes.
+![alt text](./images/68.png)
+Now go to the todo directory and run
+```bash
+npm run dev
+```
+![alt text](./images/69.png)
+View from the browser using your public ip or public dns at port 3000.
+![alt text](./images/699.png)
