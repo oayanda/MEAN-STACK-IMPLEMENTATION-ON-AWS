@@ -235,7 +235,7 @@ In the todo directory run
 ```bash
 npm run dev
 ```
-![alt text](./images/600.png)
+
 
 In the client directory go the src directory, create a directory, create some files.
 ```bash
