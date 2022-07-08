@@ -13,3 +13,94 @@ sudo apt update
 sudo apt upgrade
 ```
 ![alt text](./images/2.png)
+Lets get the location of Node.js software from Ubuntu repositories.
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+![alt text](./images/3.png)
+
+Install Node.js on the server and npm(node package manager).
+```bash
+sudo apt-get install -y nodejs
+```
+![alt text](./images/4.png)
+
+Verify node and node package manager are installed.
+package manager).
+```bash
+node -v
+```
+```bash
+npm -v
+```
+![alt text](./images/5.png)
+
+Let's create the directory/domain to store our todo application files.
+```bash
+npm -v
+```
+![alt text](./images/6.png)
+
+Change directory to the project directory ***todo***.
+```bash
+cd todo
+```
+![alt text](./images/7.png)
+
+Initialise the project, that creates the package.json file that holds the mta data to manage the application and it's dependancies.
+```bash
+npm init
+```
+![alt text](./images/8.png)
+
+Notice the newly created ***package.json file***
+```bash
+ls
+```
+![alt text](./images/9.png)
+
+Next, Install ExpressJs and create the Routes directory.
+
+Install ExpressJS
+```bash
+npm install express
+```
+![alt text](./images/10.png)
+
+Create the index page for the todo application
+```bash
+touch index.js
+```
+![alt text](./images/11.png)
+Install the dotenv module - environment variables
+```bash
+npm install dotenv
+```
+![alt text](./images/12.png)
+
+Open the index.js file and type this codes
+```bash
+nano index.js
+```
+![alt text](./images/13.png)
+![alt text](./images/14.png)
+
+Start the server
+```bash
+node index.js
+```
+![alt text](./images/15.png)
+
+Remember port 5000 was specified in the index.js file create. we would need to open this port under the security group fiie AWS EC2 instance.
+
+![alt text](./images/16.png)
+
+Verify in the broswer - use your public ip or public dns.
+```bash
+http://44.203.110.111:5000/
+```
+![alt text](./images/17.png)
+![alt text](./images/18.png)
+
+Routes
