@@ -169,7 +169,7 @@ touch .env
 nano .env
 ```
 ```bash
-DB = 'mongodb+srv://mongodb+srv://todo_user:PassWord.1@cluster0.9braz2z.mongodb.net/?retryWrites=true&w=majority'
+DB = 'mongodb+srv://todo_user:PassWord.1@cluster0.9braz2z.mongodb.net/?retryWrites=true&w=majority'
 ```
 *save and exit*
 ![alt text](./images/31.png)
