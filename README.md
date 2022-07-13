@@ -1,7 +1,7 @@
 # MERN-STACK-IMPLEMENTATION-ON-AWS
 
 ![alt text](./images/mern.jpg)
-This project explains how a MERN stack can be implemented in AWS Cloud. I would be hosting a  ***Simple To Do*** web application on AWS EC2.
+This project explains how a MERN stack can be implemented in AWS Cloud. I will host a  ***Simple To Do*** web application on Ubuntu Server in AWS EC2.
 
 ---
 
